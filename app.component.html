@@ -1,0 +1,38 @@
+
+
+<h1>{{titulo}}</h1>
+
+<form>
+<div class="form-group">
+<label>Sumando A</label>
+<input
+type="number"
+class="form-control"
+placeholder="Ingresa Primer Numero"
+[(ngModel)]="opA"
+name="opA"
+/>
+</div>
+<div class="form-group">
+  <label>Sumando B</label>
+  <input
+  type="number"
+  class="form-control"
+  placeholder="Ingresa Segundo Numero"
+  [(ngModel)]="opB"
+  name="opB"
+  />
+  </div>
+<button type="submit" class="btn btn-primary"
+(click)="okSumar()">Sumar</button>
+<button type="submit" class="btn btn-primary"
+(click)="okRestar()">Restar</button>
+<button type="submit" class="btn btn-primary"
+(click)="okMultiplicar()">Multiplicar</button>
+<button type="submit" class="btn btn-primary"
+(click)="okDividir()">Dividir</button>
+</form>
+<p>Resultado>{{resultado}}</p>
+<label>Estudiante : --Raul Francisco Mendez Aldana--</label>
+<label>Carnet : --0907-18-12017--</label>
+<label>Ingeniero: Carlos Hernandez</label>
